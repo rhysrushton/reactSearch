@@ -6,8 +6,13 @@ function Nav() {
       <a className="navbar-brand" href="/">
         React Reading List
       </a>
+      <a className="navbar-brand" href="/favourite">
+        Favourites
+      </a>
     </nav>
   );
 }
 
 export default Nav;
+
+

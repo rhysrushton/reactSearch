@@ -63,11 +63,11 @@ export default function Book({ book, id }) {
 
             {added ? (
               <a href="/" onClick={handleAddToFavorites}>
-                <i className="material-icons right red-text">favorite</i>
+                <i className="material-icons right red-text">clear</i>
               </a>
             ) : (
               <a href="/" onClick={handleAddToFavorites}>
-                <i className="material-icons right red-text">favorite_border</i>
+                <i className="material-icons right red-text">check</i>
               </a>
             )}
           </div>
