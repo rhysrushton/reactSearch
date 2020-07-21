@@ -7,6 +7,7 @@ import { Col, Row, Container } from "../components/Grid";
 import { List, ListItem } from "../components/List";
 import { Input, TextArea, FormBtn } from "../components/Form";
 import Search from "../components/Search/";
+import Results from "../components/Results";
 
 function Books() {
   const [results, setResults] = useState([]);
@@ -37,6 +38,7 @@ function Books() {
     return (
       <Container fluid>
      <Search handleSearchSubmit={handleSearchSubmit} />
+     <Results results={results} empty={empty} />
       </Container>
     );
   }
